@@ -1,0 +1,388 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 03 15:48:25 2017
+# Process ID: 4248
+# Current directory: W:/ECE532/project_1/video_in/video_in.runs/synth_1
+# Command line: vivado.exe -log video_in.vds -mode batch -messageDb vivado.pb -notrace -source video_in.tcl
+# Log file: W:/ECE532/project_1/video_in/video_in.runs/synth_1/video_in.vds
+# Journal file: W:/ECE532/project_1/video_in/video_in.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source video_in.tcl -notrace
+Command: synth_design -top video_in -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4700 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 317.836 ; gain = 109.582
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'video_in' [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/video_in.v:23]
+INFO: [Synth 8-638] synthesizing module 'pmod_cam' [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/pmod_cam.v:44]
+INFO: [Synth 8-256] done synthesizing module 'pmod_cam' (1#1) [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/pmod_cam.v:44]
+INFO: [Synth 8-638] synthesizing module 'I2C_AV_Config' [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/I2C_AV_Config.v:16]
+	Parameter LUT_SIZE bound to: 193 - type: integer 
+	Parameter CLK_Freq bound to: 25000000 - type: integer 
+	Parameter I2C_Freq bound to: 10000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/I2C_AV_Config.v:103]
+INFO: [Synth 8-638] synthesizing module 'I2C_OV7670_RGB444_Config' [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/I2C_OV7670_RGB444_Config.v:17]
+	Parameter Read_DATA bound to: 0 - type: integer 
+	Parameter SET_OV7670 bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'I2C_OV7670_RGB444_Config' (2#1) [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/I2C_OV7670_RGB444_Config.v:17]
+INFO: [Synth 8-638] synthesizing module 'I2C_Controller' [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/I2C_Controller.v:16]
+INFO: [Synth 8-256] done synthesizing module 'I2C_Controller' (3#1) [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/I2C_Controller.v:16]
+INFO: [Synth 8-256] done synthesizing module 'I2C_AV_Config' (4#1) [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/I2C_AV_Config.v:16]
+INFO: [Synth 8-256] done synthesizing module 'video_in' (5#1) [W:/ECE532/project_1/video_in/video_in.srcs/sources_1/new/video_in.v:23]
+WARNING: [Synth 8-3917] design video_in has port pwdn driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port m_axis_video_tready driven by constant 1
+WARNING: [Synth 8-3917] design video_in has port vid_field_id driven by constant 1
+WARNING: [Synth 8-3917] design video_in has port vid_vblank driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_hblank driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_io_in_ce driven by constant 1
+WARNING: [Synth 8-3917] design video_in has port aclken driven by constant 1
+WARNING: [Synth 8-3917] design video_in has port axis_enable driven by constant 1
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 354.824 ; gain = 146.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 354.824 ; gain = 146.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 354.824 ; gain = 146.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 421.641 ; gain = 213.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  62 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  59 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	  41 Input      1 Bit        Muxes := 5     
+	  60 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 33    
+	  59 Input      1 Bit        Muxes := 1     
+	  42 Input      1 Bit        Muxes := 4     
+	  19 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pmod_cam 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module I2C_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	  62 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  59 Input      5 Bit        Muxes := 1     
+	  41 Input      1 Bit        Muxes := 5     
+	  60 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 30    
+	  59 Input      1 Bit        Muxes := 1     
+	  42 Input      1 Bit        Muxes := 4     
+	  19 Input      1 Bit        Muxes := 1     
+Module I2C_AV_Config 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 486.363 ; gain = 278.109
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design video_in has port pwdn driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port m_axis_video_tready driven by constant 1
+WARNING: [Synth 8-3917] design video_in has port vid_data[15] driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_data[14] driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_data[13] driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_data[12] driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_data[11] driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_data[10] driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_data[9] driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_data[8] driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_field_id driven by constant 1
+WARNING: [Synth 8-3917] design video_in has port vid_vblank driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_hblank driven by constant 0
+WARNING: [Synth 8-3917] design video_in has port vid_io_in_ce driven by constant 1
+WARNING: [Synth 8-3917] design video_in has port aclken driven by constant 1
+WARNING: [Synth 8-3917] design video_in has port axis_enable driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 528.184 ; gain = 319.930
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------+-----------------------------------------+---------------+----------------+
+|Module Name              | RTL Object                              | Depth x Width | Implemented As | 
++-------------------------+-----------------------------------------+---------------+----------------+
+|I2C_OV7670_RGB444_Config | LUT_DATA                                | 256x16        | LUT            | 
+|I2C_Controller           | I2C_BIT                                 | 64x1          | LUT            | 
+|video_in                 | IIC/u_I2C_Controller/I2C_BIT            | 64x1          | LUT            | 
+|video_in                 | IIC/u_I2C_OV7725_RGB444_Config/LUT_DATA | 256x16        | LUT            | 
++-------------------------+-----------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_10/IIC/mI2C_CLK_DIV_reg[12]' (FDC) to 'i_10/IIC/mI2C_CLK_DIV_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_10/IIC/mI2C_CLK_DIV_reg[14]' (FDC) to 'i_10/IIC/mI2C_CLK_DIV_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_10/IIC/mI2C_CLK_DIV_reg[15]' (FDC) to 'i_10/IIC/mI2C_CLK_DIV_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_10/\IIC/mI2C_CLK_DIV_reg[13] )
+WARNING: [Synth 8-3332] Sequential element (IIC/mI2C_CLK_DIV_reg[12]) is unused and will be removed from module video_in.
+WARNING: [Synth 8-3332] Sequential element (IIC/mI2C_CLK_DIV_reg[13]) is unused and will be removed from module video_in.
+WARNING: [Synth 8-3332] Sequential element (IIC/mI2C_CLK_DIV_reg[14]) is unused and will be removed from module video_in.
+WARNING: [Synth 8-3332] Sequential element (IIC/mI2C_CLK_DIV_reg[15]) is unused and will be removed from module video_in.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 528.184 ; gain = 319.930
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|video_in    | cam/data_valid_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     3|
+|3     |LUT1   |     6|
+|4     |LUT2   |    28|
+|5     |LUT3   |    10|
+|6     |LUT4   |    17|
+|7     |LUT5   |    16|
+|8     |LUT6   |   120|
+|9     |MUXF7  |    15|
+|10    |MUXF8  |     4|
+|11    |SRL16E |     1|
+|12    |FDCE   |    42|
+|13    |FDPE   |     8|
+|14    |FDRE   |    20|
+|15    |IBUF   |    13|
+|16    |IOBUF  |     1|
+|17    |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+-------------------------+------+
+|      |Instance                       |Module                   |Cells |
++------+-------------------------------+-------------------------+------+
+|1     |top                            |                         |   339|
+|2     |  IIC                          |I2C_AV_Config            |   255|
+|3     |    u_I2C_Controller           |I2C_Controller           |   107|
+|4     |    u_I2C_OV7725_RGB444_Config |I2C_OV7670_RGB444_Config |    80|
+|5     |  cam                          |pmod_cam                 |    34|
++------+-------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 528.184 ; gain = 287.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 528.184 ; gain = 319.930
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 574.465 ; gain = 337.332
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 574.465 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 03 15:48:45 2017...

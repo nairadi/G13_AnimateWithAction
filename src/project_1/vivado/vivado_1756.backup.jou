@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Mar 20 10:54:26 2017
+# Process ID: 1756
+# Current directory: W:/ECE532/New1/project_1_1/project_1/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1200 W:\ECE532\New1\project_1_1\project_1\vivado\vivado.xpr
+# Log file: W:/ECE532/New1/project_1_1/project_1/vivado/vivado.log
+# Journal file: W:/ECE532/New1/project_1_1/project_1/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project W:/ECE532/New1/project_1_1/project_1/vivado/vivado.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace W:/ECE532/New1/project_1_1/project_1/vivado/vivado.sdk -hwspec W:/ECE532/New1/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper.hdf
+open_bd_design {W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name video_in_v1_0_project -directory W:/ECE532/New1/project_1_1/project_1/vivado/vivado.tmp/video_in_v1_0_project w:/ECE532/New1/project_1_1/project_1/video_in/video_in.srcs/sources_1/new/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+current_project vivado
+generate_target Simulation [get_files W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd] -no_script -force -quiet
+launch_simulation
+open_wave_config W:/ECE532/New1/project_1_1/project_1/vivado/video_in_tb_behav.wcfg
+source video_in_tb.tcl
+restart
+run 10 us
+current_project video_in_v1_0_project
+current_project vivado
+restart
+run 10 us
+current_project video_in_v1_0_project
+set_property core_revision 26 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path w:/ECE532/New1/project_1_1/project_1/video_in/video_in.srcs/sources_1/new
+open_bd_design {W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects [get_ips  design_1_video_in_0_1] -no_script -reset -quiet
+upgrade_ip -vlnv utoronto.ca:user:video_in:1.0 [get_ips  design_1_video_in_0_1] -log ip_upgrade.log
+generate_target all [get_files  W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd]
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets OV7670_VSYNC_1] [get_bd_nets OV7670_D_1] [get_bd_nets video_in_0_OV7670_XCLK] [get_bd_nets video_in_0_vid_data] [get_bd_nets video_in_0_vid_active_video] [get_bd_nets video_in_0_vid_vblank] [get_bd_nets video_in_0_vid_hblank] [get_bd_nets video_in_0_vid_io_in_ce] [get_bd_nets video_in_0_aclken] [get_bd_nets OV7670_HREF_1] [get_bd_nets OV7670_PCLK_1] [get_bd_nets Net] [get_bd_nets video_in_0_OV7670_SIOC] [get_bd_nets video_in_0_vid_io_in_reset] [get_bd_nets video_in_0_pwdn] [get_bd_nets video_in_0_vid_field_id] [get_bd_nets video_in_0_vid_vsync] [get_bd_nets video_in_0_vid_hsync] [get_bd_nets video_in_0_vid_io_in_clk] [get_bd_nets video_in_0_axis_enable] [get_bd_cells video_in_0]
+startgroup
+create_bd_cell -type ip -vlnv utoronto.ca:user:video_in:1.0 video_in_0
+endgroup
+connect_bd_net [get_bd_ports OV7670_VSYNC] [get_bd_pins video_in_0/OV7670_VSYNC]
+connect_bd_net [get_bd_ports OV7670_HREF] [get_bd_pins video_in_0/OV7670_HREF]
+connect_bd_net [get_bd_ports OV7670_PCLK] [get_bd_pins video_in_0/OV7670_PCLK]
+connect_bd_net [get_bd_ports OV7670_D] [get_bd_pins video_in_0/OV7670_D]
+connect_bd_net [get_bd_pins video_in_0/clk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins video_in_0/resetn] [get_bd_pins rst_clk_wiz_0_50M/peripheral_aresetn]
+connect_bd_net [get_bd_ports OV7670_SIOD] [get_bd_pins video_in_0/OV7670_SIOD]
+connect_bd_net [get_bd_ports OV7670_XCLK] [get_bd_pins video_in_0/OV7670_XCLK]
+connect_bd_net [get_bd_ports OV7670_SIOC] [get_bd_pins video_in_0/OV7670_SIOC]
+connect_bd_net [get_bd_ports pwdn] [get_bd_pins video_in_0/pwdn]
+connect_bd_net [get_bd_pins video_in_0/vid_active_video] [get_bd_pins v_vid_in_axi4s_0/vid_active_video]
+connect_bd_net [get_bd_pins video_in_0/vid_data] [get_bd_pins v_vid_in_axi4s_0/vid_data]
+connect_bd_net [get_bd_pins video_in_0/vid_field_id] [get_bd_pins v_vid_in_axi4s_0/vid_field_id]
+connect_bd_net [get_bd_pins video_in_0/vid_hblank] [get_bd_pins v_vid_in_axi4s_0/vid_hblank]
+connect_bd_net [get_bd_pins video_in_0/vid_vblank] [get_bd_pins v_vid_in_axi4s_0/vid_vblank]
+connect_bd_net [get_bd_pins video_in_0/vid_hsync] [get_bd_pins v_vid_in_axi4s_0/vid_hsync]
+connect_bd_net [get_bd_pins video_in_0/vid_vsync] [get_bd_pins v_vid_in_axi4s_0/vid_vsync]
+connect_bd_net [get_bd_pins video_in_0/vid_io_in_clk] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_clk]
+connect_bd_net [get_bd_pins video_in_0/vid_io_in_ce] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_ce]
+connect_bd_net [get_bd_pins video_in_0/vid_io_in_reset] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_reset]
+set_property -dict [list CONFIG.POLARITY {ACTIVE_HIGH}] [get_bd_pins video_in_0/vid_io_in_reset]
+connect_bd_net [get_bd_pins video_in_0/aclken] [get_bd_pins v_vid_in_axi4s_0/aclken]
+connect_bd_net [get_bd_pins video_in_0/aresetn] [get_bd_pins v_vid_in_axi4s_0/aresetn]
+connect_bd_net [get_bd_pins video_in_0/axis_enable] [get_bd_pins v_vid_in_axi4s_0/axis_enable]
+regenerate_bd_layout
+report_ip_status -name ip_status 
+save_bd_design
+close_sim
+generate_target Simulation [get_files W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd] -no_script -force -quiet
+launch_simulation
+open_wave_config W:/ECE532/New1/project_1_1/project_1/vivado/video_in_tb_behav.wcfg
+source video_in_tb.tcl
+restart
+run 10 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
+open_bd_design {W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+save_bd_design
+file copy -force W:/ECE532/New1/project_1_1/project_1/vivado/vivado.runs/impl_1/design_1_wrapper.sysdef W:/ECE532/New1/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace W:/ECE532/New1/project_1_1/project_1/vivado/vivado.sdk -hwspec W:/ECE532/New1/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper.hdf
+ipx::edit_ip_in_project -upgrade true -name IPU_wrapper_v1_0_project -directory W:/ECE532/New1/project_1_1/project_1/vivado/vivado.tmp/IPU_wrapper_v1_0_project w:/ECE532/New1/project_1_1/project_1/ipu/ipu.srcs/sources_1/imports/IPU_wrapper/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_project
+ipx::edit_ip_in_project -upgrade true -name IPU_wrapper_v1_0_project -directory W:/ECE532/New1/project_1_1/project_1/vivado/vivado.tmp/IPU_wrapper_v1_0_project w:/ECE532/New1/project_1_1/project_1/ipu/ipu.srcs/sources_1/imports/IPU_wrapper/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 8 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path w:/ECE532/New1/project_1_1/project_1/ipu/ipu.srcs/sources_1
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects [get_ips  design_1_IPU_wrapper_0_1] -no_script -reset -quiet
+upgrade_ip -vlnv xilinx.com:user:IPU_wrapper:1.0 [get_ips  design_1_IPU_wrapper_0_1] -log ip_upgrade.log
+generate_target all [get_files  W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd] -directory W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/sim_scripts -ip_user_files_dir W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files -ipstatic_source_dir W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force W:/ECE532/New1/project_1_1/project_1/vivado/vivado.runs/impl_1/design_1_wrapper.sysdef W:/ECE532/New1/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace W:/ECE532/New1/project_1_1/project_1/vivado/vivado.sdk -hwspec W:/ECE532/New1/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper.hdf

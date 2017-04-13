@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Memory>
+<Block Addr="brambase" Context="JTAG-jsn-Nexys4DDR-210292646183A-13631093-0.MDM1.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.unsignedint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+<Rendering ID="org.eclipse.debug.ui.rendering.raw_memory" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="comm_base" Context="JTAG-jsn-Nexys4DDR-210292646183A-13631093-0.MDM1.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+</Memory>

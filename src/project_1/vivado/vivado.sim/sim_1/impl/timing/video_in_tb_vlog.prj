@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "video_in_tb_time_impl.v" --include "../../../../vivado.ip_user_files/ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib  "../../../../vivado.srcs/sim_1/new/video_in_tb.v" --include "../../../../vivado.ip_user_files/ipstatic/clk_wiz_v5_3"
+
+# Do not sort compile order
+nosort

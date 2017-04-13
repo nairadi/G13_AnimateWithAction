@@ -1,0 +1,299 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_cdc_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_gray
+INFO: [VRFC 10-311] analyzing module xpm_cdc_handshake
+INFO: [VRFC 10-311] analyzing module xpm_cdc_pulse
+INFO: [VRFC 10-311] analyzing module xpm_cdc_array_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_sync_rst
+INFO: [VRFC 10-311] analyzing module xpm_cdc_async_rst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/v_vid_in_axi4s_v4_0/hdl/verilog/v_vid_in_axi4s_v4_0_coupler.v" into library v_vid_in_axi4s_v4_0_3
+INFO: [VRFC 10-311] analyzing module v_vid_in_axi4s_v4_0_3_coupler
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/v_vid_in_axi4s_v4_0/hdl/verilog/v_vid_in_axi4s_v4_0_formatter.v" into library v_vid_in_axi4s_v4_0_3
+INFO: [VRFC 10-311] analyzing module v_vid_in_axi4s_v4_0_3_formatter
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/v_vid_in_axi4s_v4_0/hdl/verilog/v_vid_in_axi4s_v4_0.v" into library v_vid_in_axi4s_v4_0_3
+INFO: [VRFC 10-311] analyzing module v_vid_in_axi4s_v4_0_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/sim/design_1_v_vid_in_axi4s_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_v_vid_in_axi4s_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/hdl/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_microblaze_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_8RVYHO
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_1UTB3Y5
+INFO: [VRFC 10-311] analyzing module m02_couplers_imp_7ANRHB
+INFO: [VRFC 10-311] analyzing module m03_couplers_imp_1W07O72
+INFO: [VRFC 10-311] analyzing module microblaze_0_local_memory_imp_1K0VQXK
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1RZP34U
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" into library blk_mem_gen_v8_3_3
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_3
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_3
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_3_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_3_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_3_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_3_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/xilinx.com/ipu_wrapper_v1_0/block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module block
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/xilinx.com/ipu_wrapper_v1_0/block_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module block_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/xilinx.com/ipu_wrapper_v1_0/IPU_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IPU_core
+INFO: [VRFC 10-311] analyzing module block
+WARNING: [VRFC 10-1195] overwriting previous definition of module block [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/xilinx.com/ipu_wrapper_v1_0/IPU_core.v:219]
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/xilinx.com/ipu_wrapper_v1_0/IPU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IPU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_IPU_wrapper_0_1/sim/design_1_IPU_wrapper_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_IPU_wrapper_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_lmb_bram_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlconcat
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_microblaze_0_xlconcat_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_command_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_nto1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v" into library axi_register_slice_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_srl_rtl
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v" into library axi_register_slice_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_9_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-311] analyzing module fifo_generator_vlog_beh
+INFO: [VRFC 10-2458] undeclared symbol wr_eop_ad, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:1321]
+INFO: [VRFC 10-2458] undeclared symbol rd_eop_ad, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:1322]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_axis, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:1561]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_axis, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:1562]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wach, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:2087]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wach, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:2088]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wdch, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:2307]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wdch, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:2308]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_wrch, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:2474]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wrch, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:2475]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_rach, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:2854]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rach, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:2855]
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_rdch, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:3087]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rdch, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:3088]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_CONV_VER
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_sync_stage
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_as
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_beh_ver_ll_afifo
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_ss
+INFO: [VRFC 10-2458] undeclared symbol srst_wrst_busy, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v:7752]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_bhv_ver_preload0
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1_axic_reg_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/hdl/fifo_generator_v13_1_rfs.v" into library fifo_generator_v13_1_1
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_1_1
+INFO: [VRFC 10-2458] undeclared symbol sleep_i, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/fifo_generator_v13_1/hdl/fifo_generator_v13_1_rfs.v:519]
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_fifo_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axic_reg_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_ndeep_srl
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v" into library axi_data_fifo_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_8_axi_data_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter_sasd.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_addr_arbiter_sasd
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_addr_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_addr_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_arbiter_resp.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_arbiter_resp
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar_sasd.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_crossbar_sasd
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_decerr_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_si_transactor
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_wdata_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_router.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_wdata_router
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v" into library axi_crossbar_v2_1_10
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_10_axi_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/utoronto.ca/comm_v1_0/hdl/comm_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comm_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/utoronto.ca/comm_v1_0/hdl/comm_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comm_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_comm_0_0/sim/design_1_comm_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_comm_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_1_0/sim/design_1_blk_mem_gen_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/utoronto.ca/vga_ip_v1_0/vga640x480.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga640x480
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_vga_ip_0_1/sim/design_1_vga_ip_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_vga_ip_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/utoronto.ca/video_in_v1_0/I2C_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/utoronto.ca/video_in_v1_0/I2C_OV7670_RGB444_Config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_OV7670_RGB444_Config
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/utoronto.ca/video_in_v1_0/pmod_cam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pmod_cam
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/utoronto.ca/video_in_v1_0/I2C_AV_Config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_AV_Config
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ipshared/utoronto.ca/video_in_v1_0/video_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module video_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_video_in_0_0/sim/design_1_video_in_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_video_in_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_a_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_axilite_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_r_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_w_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_decerr_slave.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_decerr_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_simple_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_incr_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_rd_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_cmd_translator
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_b_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_r_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_aw_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s_ar_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_b2s
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v" into library axi_protocol_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_9_axi_protocol_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_clock_converter_v2_1/hdl/verilog/axi_clock_converter_v2_1_axic_sync_clock_converter.v" into library axi_clock_converter_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_clock_converter_v2_1_8_axic_sync_clock_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_clock_converter_v2_1/hdl/verilog/axi_clock_converter_v2_1_axic_sample_cycle_ratio.v" into library axi_clock_converter_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_clock_converter_v2_1_8_axic_sample_cycle_ratio
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_clock_converter_v2_1/hdl/verilog/axi_clock_converter_v2_1_axi_clock_converter.v" into library axi_clock_converter_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_clock_converter_v2_1_8_axi_clock_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_a_downsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_a_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_b_downsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_b_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_r_downsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_r_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_w_downsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_w_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_axi_downsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_axi_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_axi4lite_downsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_axi4lite_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_axi4lite_upsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_axi4lite_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_a_upsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_a_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_r_upsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_r_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_w_upsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_w_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_w_upsizer_pktfifo.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_w_upsizer_pktfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_r_upsizer_pktfifo.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_r_upsizer_pktfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_axi_upsizer.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_axi_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/ipstatic/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_top.v" into library axi_dwidth_converter_v2_1_9
+INFO: [VRFC 10-311] analyzing module axi_dwidth_converter_v2_1_9_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_auto_ds_0/sim/design_1_auto_ds_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_ds_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_auto_ds_1/sim/design_1_auto_ds_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_ds_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_auto_ds_2/sim/design_1_auto_ds_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_ds_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.ip_user_files/bd/design_1/ip/design_1_auto_us_0/sim/design_1_auto_us_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_us_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sim_1/new/video_in_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module video_in_tb
+INFO: [VRFC 10-2458] undeclared symbol resets, assumed default net type wire [W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sim_1/new/video_in_tb.v:98]
+INFO: [VRFC 10-2263] Analyzing Verilog file "W:/ECE532/New1/project_1_1/project_1/vivado/vivado.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

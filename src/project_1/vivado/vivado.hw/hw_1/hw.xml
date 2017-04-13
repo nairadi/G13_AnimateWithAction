@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.2 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="1">
+  <device name="xc7a100t_0" gui_info=""/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a100t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="W:/ECE532/Project1/PMOD Camera/Tutorial/532_pmod_camera_dist/tutorial/tutorial.runs/impl_1/ov7670_top.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="hw_ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="hw_ila_2" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.CAPTURE_MODE" value="BASIC"/>
+      <Properties Property="CONTROL.DATA_DEPTH" value="1024"/>
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_MODE" value="BASIC_ONLY"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="0"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_1" gui_info="">
+      <Properties Property="CONTROL.CAPTURE_MODE" value="ALWAYS"/>
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_MODE" value="BASIC_ONLY"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="OV7670_D_1[7:0]" gui_info=""/>
+    <Object name="OV7670_PCLK_1" gui_info="Capture Setup=3"/>
+    <Object name="OV7670_VSYNC_1" gui_info="Capture Setup=2"/>
+    <Object name="block_updated" gui_info=""/>
+    <Object name="v_vid_in_axi4s_0_m_axis_video_tdata[15:0]" gui_info="Capture Setup=0"/>
+    <Object name="v_vid_in_axi4s_0_m_axis_video_tlast" gui_info=""/>
+    <Object name="video_in_0_OV7670_XCLK" gui_info=""/>
+    <Object name="video_in_0_vid_data[15:0]" gui_info="Capture Setup=1"/>
+  </ObjectList>
+  <ObjectList object_type="hw_sysmon" gui_info="">
+    <Object name="XADC" gui_info="hw_ila_1=[TEMPERATURE=-65281;SCAN_RATE=1000;TRACK_TIME=1;]"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="IPU_wrapper_0_m_axis_video_tready"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe4[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="IPU_wrapper_0_write_to_mem_addr[31]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[30]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[29]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[28]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[27]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[26]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[25]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[24]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[23]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[22]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[21]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[20]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[19]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[18]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[17]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[16]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[15]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[14]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[13]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[12]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[11]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[10]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[9]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[8]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[7]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[6]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[5]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[4]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[3]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[2]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[1]"/>
+        <net name="IPU_wrapper_0_write_to_mem_addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[63:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="IPU_wrapper_0_write_to_mem_data[63]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[62]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[61]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[60]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[59]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[58]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[57]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[56]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[55]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[54]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[53]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[52]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[51]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[50]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[49]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[48]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[47]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[46]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[45]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[44]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[43]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[42]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[41]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[40]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[39]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[38]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[37]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[36]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[35]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[34]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[33]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[32]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[31]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[30]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[29]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[28]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[27]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[26]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[25]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[24]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[23]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[22]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[21]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[20]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[19]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[18]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[17]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[16]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[15]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[14]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[13]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[12]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[11]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[10]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[9]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[8]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[7]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[6]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[5]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[4]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[3]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[2]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[1]"/>
+        <net name="IPU_wrapper_0_write_to_mem_data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe8[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="IPU_wrapper_0_write_to_mem_en"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="MAP" value="probe8[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="Net"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe2[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="OV7670_D_1[7]"/>
+        <net name="OV7670_D_1[6]"/>
+        <net name="OV7670_D_1[5]"/>
+        <net name="OV7670_D_1[4]"/>
+        <net name="OV7670_D_1[3]"/>
+        <net name="OV7670_D_1[2]"/>
+        <net name="OV7670_D_1[1]"/>
+        <net name="OV7670_D_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="gteq8&apos;h00"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="OV7670_D_IBUF[7]"/>
+        <net name="OV7670_D_IBUF[6]"/>
+        <net name="OV7670_D_IBUF[5]"/>
+        <net name="OV7670_D_IBUF[4]"/>
+        <net name="OV7670_D_IBUF[3]"/>
+        <net name="OV7670_D_IBUF[2]"/>
+        <net name="OV7670_D_IBUF[1]"/>
+        <net name="OV7670_D_IBUF[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe11[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="OV7670_HREF_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;b1"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe12[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="OV7670_PCLK_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;b1"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe13[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="OV7670_VSYNC_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="block_updated"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq10&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq10&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[9:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq10&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="col_idx[9]"/>
+        <net name="col_idx[8]"/>
+        <net name="col_idx[7]"/>
+        <net name="col_idx[6]"/>
+        <net name="col_idx[5]"/>
+        <net name="col_idx[4]"/>
+        <net name="col_idx[3]"/>
+        <net name="col_idx[2]"/>
+        <net name="col_idx[1]"/>
+        <net name="col_idx[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe6[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="enable_comparison"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq9&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe2[8:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="row_idx[8]"/>
+        <net name="row_idx[7]"/>
+        <net name="row_idx[6]"/>
+        <net name="row_idx[5]"/>
+        <net name="row_idx[4]"/>
+        <net name="row_idx[3]"/>
+        <net name="row_idx[2]"/>
+        <net name="row_idx[1]"/>
+        <net name="row_idx[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="gt16&apos;h0000"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe3[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[15]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[14]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[13]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[12]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[11]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[10]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[9]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[8]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[7]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[6]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[5]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[4]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[3]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[2]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[1]"/>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tdata[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe9[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tlast"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe10[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tuser"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe11[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="v_vid_in_axi4s_0_m_axis_video_tvalid"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="MAP" value="probe12[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="video_in_0_OV7670_SIOC"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="MAP" value="probe13[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="video_in_0_OV7670_XCLK"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="gt16&apos;h0000"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe6[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="video_in_0_vid_data[15]"/>
+        <net name="video_in_0_vid_data[14]"/>
+        <net name="video_in_0_vid_data[13]"/>
+        <net name="video_in_0_vid_data[12]"/>
+        <net name="video_in_0_vid_data[11]"/>
+        <net name="video_in_0_vid_data[10]"/>
+        <net name="video_in_0_vid_data[9]"/>
+        <net name="video_in_0_vid_data[8]"/>
+        <net name="video_in_0_vid_data[7]"/>
+        <net name="video_in_0_vid_data[6]"/>
+        <net name="video_in_0_vid_data[5]"/>
+        <net name="video_in_0_vid_data[4]"/>
+        <net name="video_in_0_vid_data[3]"/>
+        <net name="video_in_0_vid_data[2]"/>
+        <net name="video_in_0_vid_data[1]"/>
+        <net name="video_in_0_vid_data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="write_to_mem_addr[31]"/>
+        <net name="write_to_mem_addr[30]"/>
+        <net name="write_to_mem_addr[29]"/>
+        <net name="write_to_mem_addr[28]"/>
+        <net name="write_to_mem_addr[27]"/>
+        <net name="write_to_mem_addr[26]"/>
+        <net name="write_to_mem_addr[25]"/>
+        <net name="write_to_mem_addr[24]"/>
+        <net name="write_to_mem_addr[23]"/>
+        <net name="write_to_mem_addr[22]"/>
+        <net name="write_to_mem_addr[21]"/>
+        <net name="write_to_mem_addr[20]"/>
+        <net name="write_to_mem_addr[19]"/>
+        <net name="write_to_mem_addr[18]"/>
+        <net name="write_to_mem_addr[17]"/>
+        <net name="write_to_mem_addr[16]"/>
+        <net name="write_to_mem_addr[15]"/>
+        <net name="write_to_mem_addr[14]"/>
+        <net name="write_to_mem_addr[13]"/>
+        <net name="write_to_mem_addr[12]"/>
+        <net name="write_to_mem_addr[11]"/>
+        <net name="write_to_mem_addr[10]"/>
+        <net name="write_to_mem_addr[9]"/>
+        <net name="write_to_mem_addr[8]"/>
+        <net name="write_to_mem_addr[7]"/>
+        <net name="write_to_mem_addr[6]"/>
+        <net name="write_to_mem_addr[5]"/>
+        <net name="write_to_mem_addr[4]"/>
+        <net name="write_to_mem_addr[3]"/>
+        <net name="write_to_mem_addr[2]"/>
+        <net name="write_to_mem_addr[1]"/>
+        <net name="write_to_mem_addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="write_to_mem_data[31]"/>
+        <net name="write_to_mem_data[30]"/>
+        <net name="write_to_mem_data[29]"/>
+        <net name="write_to_mem_data[28]"/>
+        <net name="write_to_mem_data[27]"/>
+        <net name="write_to_mem_data[26]"/>
+        <net name="write_to_mem_data[25]"/>
+        <net name="write_to_mem_data[24]"/>
+        <net name="write_to_mem_data[23]"/>
+        <net name="write_to_mem_data[22]"/>
+        <net name="write_to_mem_data[21]"/>
+        <net name="write_to_mem_data[20]"/>
+        <net name="write_to_mem_data[19]"/>
+        <net name="write_to_mem_data[18]"/>
+        <net name="write_to_mem_data[17]"/>
+        <net name="write_to_mem_data[16]"/>
+        <net name="write_to_mem_data[15]"/>
+        <net name="write_to_mem_data[14]"/>
+        <net name="write_to_mem_data[13]"/>
+        <net name="write_to_mem_data[12]"/>
+        <net name="write_to_mem_data[11]"/>
+        <net name="write_to_mem_data[10]"/>
+        <net name="write_to_mem_data[9]"/>
+        <net name="write_to_mem_data[8]"/>
+        <net name="write_to_mem_data[7]"/>
+        <net name="write_to_mem_data[6]"/>
+        <net name="write_to_mem_data[5]"/>
+        <net name="write_to_mem_data[4]"/>
+        <net name="write_to_mem_data[3]"/>
+        <net name="write_to_mem_data[2]"/>
+        <net name="write_to_mem_data[1]"/>
+        <net name="write_to_mem_data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="MAP" value="probe14[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="write_to_mem_en"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

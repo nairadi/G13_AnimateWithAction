@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="video_in_tb_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="video_in_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="10000000001fs"></ZoomEndTime>
+      <Cursor1Time time="10000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/video_in_tb/OV7670_D" type="array">
+      <obj_property name="ElementShortName">OV7670_D[7:0]</obj_property>
+      <obj_property name="ObjectShortName">OV7670_D[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/OV7670_HREF" type="logic">
+      <obj_property name="ElementShortName">OV7670_HREF</obj_property>
+      <obj_property name="ObjectShortName">OV7670_HREF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/OV7670_PCLK" type="logic">
+      <obj_property name="ElementShortName">OV7670_PCLK</obj_property>
+      <obj_property name="ObjectShortName">OV7670_PCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/OV7670_SIOC" type="logic">
+      <obj_property name="ElementShortName">OV7670_SIOC</obj_property>
+      <obj_property name="ObjectShortName">OV7670_SIOC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/OV7670_SIOD" type="logic">
+      <obj_property name="ElementShortName">OV7670_SIOD</obj_property>
+      <obj_property name="ObjectShortName">OV7670_SIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/OV7670_VSYNC" type="logic">
+      <obj_property name="ElementShortName">OV7670_VSYNC</obj_property>
+      <obj_property name="ObjectShortName">OV7670_VSYNC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/OV7670_XCLK" type="logic">
+      <obj_property name="ElementShortName">OV7670_XCLK</obj_property>
+      <obj_property name="ObjectShortName">OV7670_XCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/vid_hsync" type="logic">
+      <obj_property name="ElementShortName">vid_hsync</obj_property>
+      <obj_property name="ObjectShortName">vid_hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/vid_vsync" type="logic">
+      <obj_property name="ElementShortName">vid_vsync</obj_property>
+      <obj_property name="ObjectShortName">vid_vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/vid_active_video" type="logic">
+      <obj_property name="ElementShortName">vid_active_video</obj_property>
+      <obj_property name="ObjectShortName">vid_active_video</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/vid_io_in_ce" type="logic">
+      <obj_property name="ElementShortName">vid_io_in_ce</obj_property>
+      <obj_property name="ObjectShortName">vid_io_in_ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/vid_io_in_clk" type="logic">
+      <obj_property name="ElementShortName">vid_io_in_clk</obj_property>
+      <obj_property name="ObjectShortName">vid_io_in_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/vid_io_in_reset" type="logic">
+      <obj_property name="ElementShortName">vid_io_in_reset</obj_property>
+      <obj_property name="ObjectShortName">vid_io_in_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/vid_data" type="array">
+      <obj_property name="ElementShortName">vid_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">vid_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/m_axis_video_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_video_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_video_tdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/m_axis_video_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_video_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_video_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/m_axis_video_tuser" type="logic">
+      <obj_property name="ElementShortName">m_axis_video_tuser</obj_property>
+      <obj_property name="ObjectShortName">m_axis_video_tuser</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_in_tb/design_1_i/v_vid_in_axi4s_0/inst/m_axis_video_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_video_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_video_tlast</obj_property>
+   </wvobject>
+</wave_config>

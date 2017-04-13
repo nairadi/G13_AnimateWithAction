@@ -1,0 +1,480 @@
+///******************************************************************************
+//*
+//* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+//*
+//* Permission is hereby granted, free of charge, to any person obtaining a copy
+//* of this software and associated documentation files (the "Software"), to deal
+//* in the Software without restriction, including without limitation the rights
+//* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//* copies of the Software, and to permit persons to whom the Software is
+//* furnished to do so, subject to the following conditions:
+//*
+//* The above copyright notice and this permission notice shall be included in
+//* all copies or substantial portions of the Software.
+//*
+//* Use of the Software is limited solely to applications:
+//* (a) running on a Xilinx device, or
+//* (b) that interact with a Xilinx device through a bus or interconnect.
+//*
+//* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+//* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+//* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+//* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//* SOFTWARE.
+//*
+//* Except as contained in this notice, the name of the Xilinx shall not be used
+//* in advertising or otherwise to promote the sale, use or other dealings in
+//* this Software without prior written authorization from Xilinx.
+//*
+//******************************************************************************/
+//
+///*
+// * helloworld.c: simple test application
+// *
+// * This application configures UART 16550 to baud rate 9600.
+// * PS7 UART (Zynq) is not initialized by this application, since
+// * bootrom/bsp configures it to baud rate 115200
+// *
+// * ------------------------------------------------
+// * | UART TYPE   BAUD RATE                        |
+// * ------------------------------------------------
+// *   uartns550   9600
+// *   uartlite    Configurable only in HW design
+// *   ps7_uart    115200 (configured by bootrom/bsp)
+// */
+//
+//#include <stdio.h>
+//#include "platform.h"
+//#include "xil_printf.h"
+//#include "comm.h"
+//#include <time.h>
+//#include "xparameters.h"
+//#include "xil_io.h"
+//
+//#define MAX_BLKS 5
+//#define MAX_ROWS 480
+//#define MAX_COLS 640
+//#define PRINT xil_printf
+//
+//unsigned int * brambase = (unsigned int *) 0xc0000000;
+//volatile unsigned int * commbase = (unsigned int *) XPAR_COMM_0_S00_AXI_BASEADDR;
+//
+//unsigned int white = 0x00fff;
+//unsigned int color = 0x00000;
+//
+//int main(void)
+//{
+//	init_platform();
+//
+//	COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG3_OFFSET,0x001);
+//
+//	while (1) {
+//
+//		unsigned int row = 0;
+//		unsigned int col = 0;
+//		unsigned int comm_address = 0;
+//		unsigned int blk = 0;
+//
+//		unsigned int top[25];
+//		unsigned int bot[25];
+//		unsigned int leR[25];
+//		unsigned int leC[25];
+//		unsigned int rig[25];
+//
+//		unsigned int bram_val1;
+//		unsigned int bram_val2;
+//
+//		for (blk = 0; blk < MAX_BLKS; blk++) {
+//			bram_val1 = *(brambase + blk*2);
+//			bram_val2 = *(brambase + blk*2 + 1);
+//			top[blk] = bram_val1 & 0x000001ff;
+//			bot[blk] = (bram_val1>>9) & 0x000001ff;
+//			leR[blk] = (bram_val1>>18) & 0x000001ff;
+//			leC[blk] = ((bram_val1>>27) & 0x0000001f) | ((bram_val2 & 0x0000001f)<<5);
+//			rig[blk] = (bram_val2>>5) & 0x000003ff;
+//			xil_printf("%u %u %u %u %u\n", top[blk], bot[blk], leR[blk], leC[blk], rig[blk]);
+//		}
+//
+//		for (row = 0; row < MAX_ROWS; row++) {
+//			for (col = 0; col < MAX_COLS; col++) {
+//				unsigned short found = 0;
+//				for (blk = 0; blk < MAX_BLKS; blk++) {
+//					if (((row >= top[blk]) && (row <= bot[blk])) && ((col >= leC[blk]) && (col <= rig[blk]))) {
+//						found = 1;
+//						break;
+//					}
+//				}
+//				comm_address = (640 * row) + col;
+//				if (found == 1) {
+//					color = 0xafa;
+//				} else {
+//					color = 0x000;
+//				}
+//				COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG0_OFFSET,(comm_address | (color << 19) | (0x1 << 31)));
+//			}
+//		}
+//
+//	}
+//
+//	return 0;
+//}
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "comm.h"
+#include <time.h>
+#include "xparameters.h"
+#include "xil_io.h"
+
+#define MAX_BLKS 6
+#define MAX_BLKS1 6
+#define MAX_ROWS 480
+#define MAX_COLS 640
+#define PRINT xil_printf
+
+unsigned int * brambase = (unsigned int *) 0xc0000000;
+volatile unsigned int * commbase = (unsigned int *) XPAR_COMM_0_S00_AXI_BASEADDR;
+
+int top_all[MAX_BLKS] = {51, 120, 116, 265, 303, 301};
+int bot_all[MAX_BLKS] = {95, 198, 194, 272, 450, 448};
+int leR_all[MAX_BLKS] = {70, 192, 119, 269, 303, 301};
+int leC_all[MAX_BLKS] = {294, 180, 386, 268, 266, 352};
+int rig_all[MAX_BLKS] = {348, 258, 464, 368, 286, 372};
+int slope[MAX_BLKS] = {0, 0, 0, 0, 0, 0};
+
+
+
+unsigned int white = 0x00fff;
+unsigned int color = 0x00000;
+
+/////////////////////////////// LDA START ///////////////////////////////
+void clear_screen(unsigned int top, unsigned int bot, unsigned int lef, unsigned int rig) {
+	unsigned int row = top, col = lef, comm_address = 0;
+	color = 0x000;
+	for (row = top; row < bot; row++) {
+		for (col = lef; col < rig; col++) {
+			comm_address = (640 * row) + col;
+
+			COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG0_OFFSET,(comm_address | (color << 19) | (0x1 << 31)));
+
+//
+//			COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG0_OFFSET,comm_address);
+//			COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG1_OFFSET,color);
+//			COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG2_OFFSET,0x001);
+//			COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG2_OFFSET,0x000);
+		}
+	}
+}
+
+void draw_pixel(int x, int y, unsigned int color1) {
+	unsigned int comm_address = 0;
+	comm_address = (640 * x) + y;
+//	color = 0xfff;
+	color = color1;
+
+	COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG0_OFFSET,(comm_address | (color << 19) | (0x1 << 31)));
+
+
+//	COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG0_OFFSET,comm_address);
+//	COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG1_OFFSET,color);
+//	COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG2_OFFSET,0x001);
+//	COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG2_OFFSET,0x000);
+}
+
+void swap (int *x, int *y) {
+	int temp = *x;
+	*x = *y;
+	*y = temp;
+}
+
+void draw_line(unsigned int x0, unsigned int x1, unsigned int y0, unsigned int y1, unsigned int color1) {
+
+	int is_steep = abs(y1 - y0) > abs(x1 - x0);
+	if (is_steep) {
+		swap(&x0, &y0);
+		swap(&x1, &y1);
+	}
+	if (x0 > x1) {
+		swap(&x0, &x1);
+		swap(&y0, &y1);
+	}
+
+	int deltax = x1 - x0;
+	int deltay = abs(y1 - y0);
+	int error = -(deltax/2);
+	int y = y0;
+	int y_step;
+	if (y0 < y1) y_step = 1; else y_step = -1;
+	int x;
+	for (x = x0; x <= x1; x++) {
+		if (is_steep) draw_pixel(y, x, color1); else draw_pixel(x, y, color1);
+		error = error + deltay;
+		if (error > 0) {
+			y = y + y_step;
+			error = error - deltax;
+		}
+	}
+}
+/////////////////////////////// LDA END  ////////////////////////////////
+
+/////////////////////////////// CDA START ///////////////////////////////
+void draw_circle(int x0, int y0, int radius, unsigned int color1)
+{
+    int x = radius;
+    int y = 0;
+    int err = 0;
+
+    while (x >= y)
+    {
+        draw_pixel(x0 + x, y0 + y, color1);
+        draw_pixel(x0 + y, y0 + x, color1);
+        draw_pixel(x0 - y, y0 + x, color1);
+        draw_pixel(x0 - x, y0 + y, color1);
+        draw_pixel(x0 - x, y0 - y, color1);
+        draw_pixel(x0 - y, y0 - x, color1);
+        draw_pixel(x0 + y, y0 - x, color1);
+        draw_pixel(x0 + x, y0 - y, color1);
+
+        if (err <= 0)
+        {
+            y += 1;
+            err += 2*y + 1;
+        }
+        if (err > 0)
+        {
+            x -= 1;
+            err -= 2*x + 1;
+        }
+    }
+}
+/////////////////////////////// CDA END  ////////////////////////////////
+
+/////////////////////////////// CDA START ///////////////////////////////
+void draw_semi_circle(int x0, int y0, int radius, unsigned int color1)
+{
+    int x = radius;
+    int y = 0;
+    int err = 0;
+
+    while (x >= y)
+    {
+        draw_pixel(x0 + x, y0 + y, color1);
+        draw_pixel(x0 + y, y0 + x, color1);
+//        draw_pixel(x0 - y, y0 + x);
+//        draw_pixel(x0 - x, y0 + y);
+//        draw_pixel(x0 - x, y0 - y);
+//        draw_pixel(x0 - y, y0 - x);
+        draw_pixel(x0 + y, y0 - x, color1);
+        draw_pixel(x0 + x, y0 - y, color1);
+
+        if (err <= 0)
+        {
+            y += 1;
+            err += 2*y + 1;
+        }
+        if (err > 0)
+        {
+            x -= 1;
+            err -= 2*x + 1;
+        }
+    }
+}
+/////////////////////////////// CDA END  ////////////////////////////////
+
+unsigned int clc_top = 0;
+unsigned int clc_bot = 480;
+unsigned int clc_lef = 0;
+unsigned int clc_rig = 640;
+int draw_or_clear = 0;
+unsigned int color1 = 0x000;
+int mod_value = 2;
+
+int main(void)
+{
+	init_platform();
+
+	COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG3_OFFSET,0x001);
+	clear_screen(clc_top, clc_bot, clc_lef, clc_rig);
+	while (1) {
+//		clear_screen(clc_top, clc_bot, clc_lef, clc_rig);
+
+
+		unsigned int row = 0;
+		unsigned int col = 0;
+		unsigned int comm_address = 0;
+		unsigned int blk = 0;
+
+		unsigned int top[25];
+		unsigned int bot[25];
+		unsigned int leR[25];
+		unsigned int leC[25];
+		unsigned int rig[25];
+
+		unsigned int bram_val1;
+		unsigned int bram_val2;
+
+
+		int mid_x = 0;
+		int mid_y = 0;
+		unsigned int radius = 0;
+
+
+		if((draw_or_clear %mod_value) != 0){
+			color1 = 0x000;
+		}
+		else{
+			color1 = 0xfff;
+		}
+
+		for (blk = 0; blk < MAX_BLKS1; blk++) {
+			top[blk] = top_all[blk];
+			bot[blk] = bot_all[blk];
+			leR[blk] = leR_all[blk];
+			leC[blk] = leC_all[blk];
+			rig[blk] = rig_all[blk];
+
+//			if(top[blk] < clc_top)
+//				clc_top = top[blk];
+//			if(bot[blk] > clc_bot)
+//				clc_bot = bot[blk];
+//			if(leC[blk] < clc_lef)
+//				clc_lef = leC[blk];
+//			if(rig[blk] > clc_rig)
+//				clc_rig - rig[blk];
+//			xil_printf("%u %u %u %u %u\n", top[blk], bot[blk], leR[blk], leC[blk], rig[blk]);
+		}
+
+
+//		xil_printf("Done all blocks\n");
+
+		for (blk = 0; blk < MAX_BLKS1; blk++) {
+//			draw_line(top[blk], leC[blk], bot[blk], rig[blk]);
+
+			
+			if(blk == 0){
+				mid_y = leC[blk] + (abs(rig[blk] - leC[blk])/2);
+				mid_x = top[blk] + (abs(top[blk] - bot[blk])/2);
+				radius = abs(top[blk] - mid_x);
+//				xil_printf("Radius is: %u\n", radius);
+//				xil_printf("Center is: (%u, %u)\n", mid_x, mid_y);
+				draw_circle(mid_x, mid_y, radius, color1);
+
+
+				int temp_mid_y = 0;
+				int temp_mid_x = 0;
+				int temp_radius = 0;
+				temp_mid_y = leC[blk] + (abs(rig[blk] - leC[blk])/2);
+				temp_mid_x = top[blk] + (abs(top[blk] - bot[blk])/2);
+				temp_mid_x = temp_mid_x + (abs(mid_x - bot[blk])/3);
+				temp_radius = abs(top[blk] - temp_mid_x)/3;
+				draw_semi_circle(temp_mid_x, temp_mid_y, temp_radius, color1);
+
+				temp_mid_y = leC[blk] + (abs(rig[blk] - leC[blk])/3);
+				temp_mid_x = top[blk] + (abs(top[blk] - bot[blk])/3);
+				temp_radius = abs(top[blk] - temp_mid_x)/6;
+				draw_circle(temp_mid_x, temp_mid_y, temp_radius, color1);
+
+				temp_mid_y = leC[blk] + 2*(abs(rig[blk] - leC[blk])/3);
+				temp_mid_x = top[blk] + (abs(top[blk] - bot[blk])/3);
+				temp_radius = abs(top[blk] - temp_mid_x)/6;
+				draw_circle(temp_mid_x, temp_mid_y, temp_radius, color1);
+
+			}
+			else{
+				slope[blk] = (top[blk] - bot[blk])/(leC[blk] - rig[blk]);
+				if (((leR[blk] - top[blk]) < (bot[blk] - leR[blk]))){
+					slope[blk] = slope[blk] * -1;
+
+				}
+
+				if(slope[blk] > 0){
+					draw_line(top[blk], bot[blk], rig[blk], leC[blk], color1);
+				}
+				else{
+					draw_line(top[blk], bot[blk], leC[blk], rig[blk], color1);
+				}
+
+				if(blk == 3){
+					draw_line(top[2], top[blk], rig[blk], (leC[blk] + (rig[blk] - leC[blk])/2), color1);
+					draw_line(top[2], top[blk], leC[blk], (leC[blk] + (rig[blk] - leC[blk])/2), color1);
+					draw_line(top[2], top[2], rig[blk], leC[blk], color1);//leC[2], (leC[blk] + (rig[blk] - leC[blk])/2));
+				}
+			}
+//			top_all[blk] = top_all[blk] + 10;
+//			bot_all[blk] = bot_all[blk] + 10;
+//			leR_all[blk] = leR_all[blk] + 10;
+//			leR_all[blk] = leR_all[blk] + 10;
+//			leC_all[blk] = leC_all[blk] + 10;
+//			rig_all[blk] = rig_all[blk] + 10;
+		}
+
+//		for (row = 0; row < MAX_ROWS; row++) {
+//			for (col = 0; col < MAX_COLS; col++) {
+//				unsigned short found = 0;
+//				for (blk = 0; blk < MAX_BLKS; blk++) {
+//					if (((row >= top[blk]) && (row <= bot[blk])) && ((col >= leC[blk]) && (col <= rig[blk]))) {
+//						found = 1;
+//					}
+//				}
+//
+//				//if (((row >= 120) && (row <= 360)) && ((col >= 160) && (col <= 480))) {
+//				//if ((row == 479)||(row == 32)) {
+//				//	found = 1;
+//				//}
+//				comm_address = (640 * row) + col;
+//				if (found == 1) {
+//					color = 0xafa;
+//				} else {
+//					color = 0x000;
+//				}
+//				COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG0_OFFSET,comm_address);
+//				COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG1_OFFSET,color);
+//				COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG2_OFFSET,0x001);
+//				COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG2_OFFSET,0x000);
+//			}
+//		}
+
+		//while (1) {
+		//	unsigned int done = COMM_mReadReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG4_OFFSET);
+		//	if (done) {
+		//		break;
+		//	}
+		//}
+
+		//xil_printf("REG4 = %u %u\n", color, COMM_mReadReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG4_OFFSET));
+
+		//int i = 0;
+		//for (i=0; i < 1000000; i++) {}
+
+		//COMM_mWriteReg(XPAR_COMM_0_S00_AXI_BASEADDR,COMM_S00_AXI_SLV_REG3_OFFSET,0x000);
+		if((draw_or_clear%mod_value) != 0){
+			for (blk = 0; blk < MAX_BLKS; blk++) {
+	//			top_all[blk] = top_all[blk] + 10;
+	//			bot_all[blk] = bot_all[blk] + 10;
+	//			leR_all[blk] = leR_all[blk] + 10;
+	//			leR_all[blk] = leR_all[blk] + 10;
+				leC_all[blk] = leC_all[blk] + 1;
+				rig_all[blk] = rig_all[blk] + 1;
+	//			if(blk == 2 || blk == 1){
+	////				rig_all[blk] = rig_all[blk] - 10;
+	////				if(bot_all[blk] > top_all[blk] + 5){
+	////					bot_all[blk] = bot_all[blk] - 2;
+	////				}
+	//			}
+
+	//			xil_printf("%u %u %u %u %u\n", top[blk], bot[blk], leR[blk], leC[blk], rig[blk]);
+			}
+		}
+		draw_or_clear++;
+
+		if((draw_or_clear%mod_value) != 0){
+			int i;
+			for (i = 0; i < 1000000; i++);
+		}
+	}
+
+	return 0;
+}

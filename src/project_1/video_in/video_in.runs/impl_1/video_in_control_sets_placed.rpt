@@ -1,0 +1,61 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Fri Mar 03 15:49:22 2017
+| Host         : BA3155WS26 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file video_in_control_sets_placed.rpt
+| Design       : video_in
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    26 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               3 |            2 |
+| No           | No                    | Yes                    |              24 |           11 |
+| No           | Yes                   | No                     |               8 |            2 |
+| Yes          | No                    | No                     |               9 |            2 |
+| Yes          | No                    | Yes                    |              26 |           12 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------+---------------------------------+------------------+------------------+----------------+
+|      Clock Signal      |          Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------+---------------------------------+------------------+------------------+----------------+
+| ~OV7670_PCLK_IBUF_BUFG |                                 |                  |                1 |              1 |
+|  OV7670_PCLK_IBUF_BUFG |                                 |                  |                1 |              2 |
+|  aclk_OBUF_BUFG        | IIC/u_I2C_Controller/E[0]       | aresetn_OBUF     |                3 |              4 |
+|  aclk_OBUF_BUFG        | IIC/u_I2C_Controller/SD_COUNTER | aresetn_OBUF     |                3 |              6 |
+|  OV7670_PCLK_IBUF_BUFG |                                 | vid_vsync_OBUF   |                2 |              8 |
+|  OV7670_PCLK_IBUF_BUFG | cam/p_0_in                      |                  |                3 |             10 |
+|  aclk_OBUF_BUFG        | IIC/LUT_INDEX_rep[7]_i_1_n_0    | aresetn_OBUF     |                6 |             16 |
+|  aclk_OBUF_BUFG        |                                 | aresetn_OBUF     |               11 |             24 |
++------------------------+---------------------------------+------------------+------------------+----------------+
+
+

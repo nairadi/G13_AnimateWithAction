@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# 
+# Start of session at: Wed Mar 15 17:50:07 2017
+# Process ID: 7024
+# Current directory: C:/Users/Tirthak/OneDrive/ECE532/project_1_1/project_1/vivado
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2016.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/Tirthak/OneDrive/ECE532/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data C:/Xilinx/SDK/2016.2/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/Users/Tirthak/OneDrive/ECE532/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out C:/Users/Tirthak/OneDrive/ECE532/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper_hw_platform_0/download.bit -force
+# Log file: C:/Users/Tirthak/OneDrive/ECE532/project_1_1/project_1/vivado/updatemem.log
+# Journal file: C:/Users/Tirthak/OneDrive/ECE532/project_1_1/project_1/vivado\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2016.2/scripts/updatemem/main.tcl -notrace
+Loading bitfile C:/Users/Tirthak/OneDrive/ECE532/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream C:/Users/Tirthak/OneDrive/ECE532/project_1_1/project_1/vivado/vivado.sdk/design_1_wrapper_hw_platform_0/download.bit...
+update_mem: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 497.926 ; gain = 447.910
+INFO: [Common 17-206] Exiting updatemem at Wed Mar 15 17:50:24 2017...

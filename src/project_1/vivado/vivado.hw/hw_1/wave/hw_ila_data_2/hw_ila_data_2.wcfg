@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="W:/ECE532/project_1_1/project_1/vivado/vivado.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1024001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="13" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="IPU_wrapper_0_m_axis_video_tready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">IPU_wrapper_0_m_axis_video_tready</obj_property>
+      <obj_property name="ObjectShortName">IPU_wrapper_0_m_axis_video_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="IPU_wrapper_0_write_to_mem_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">IPU_wrapper_0_write_to_mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IPU_wrapper_0_write_to_mem_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="IPU_wrapper_0_write_to_mem_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">IPU_wrapper_0_write_to_mem_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">IPU_wrapper_0_write_to_mem_data[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="IPU_wrapper_0_write_to_mem_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">IPU_wrapper_0_write_to_mem_en</obj_property>
+      <obj_property name="ObjectShortName">IPU_wrapper_0_write_to_mem_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="OV7670_PCLK_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">OV7670_PCLK_1</obj_property>
+      <obj_property name="ObjectShortName">OV7670_PCLK_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="block_updated" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">block_updated</obj_property>
+      <obj_property name="ObjectShortName">block_updated</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="col_idx" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">col_idx[9:0]</obj_property>
+      <obj_property name="ObjectShortName">col_idx[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="enable_comparison" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">enable_comparison</obj_property>
+      <obj_property name="ObjectShortName">enable_comparison</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="row_idx" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">row_idx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">row_idx[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="v_vid_in_axi4s_0_m_axis_video_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">v_vid_in_axi4s_0_m_axis_video_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">v_vid_in_axi4s_0_m_axis_video_tdata[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="v_vid_in_axi4s_0_m_axis_video_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">v_vid_in_axi4s_0_m_axis_video_tlast</obj_property>
+      <obj_property name="ObjectShortName">v_vid_in_axi4s_0_m_axis_video_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="v_vid_in_axi4s_0_m_axis_video_tuser" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">v_vid_in_axi4s_0_m_axis_video_tuser</obj_property>
+      <obj_property name="ObjectShortName">v_vid_in_axi4s_0_m_axis_video_tuser</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="v_vid_in_axi4s_0_m_axis_video_tvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">v_vid_in_axi4s_0_m_axis_video_tvalid</obj_property>
+      <obj_property name="ObjectShortName">v_vid_in_axi4s_0_m_axis_video_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

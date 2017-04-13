@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Apr 10 18:06:17 2017
+# Process ID: 5020
+# Current directory: W:/ECE532/New1/project_1_1/project_1/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3112 W:\ECE532\New1\project_1_1\project_1\vivado\vivado.xpr
+# Log file: W:/ECE532/New1/project_1_1/project_1/vivado/vivado.log
+# Journal file: W:/ECE532/New1/project_1_1/project_1/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project W:/ECE532/New1/project_1_1/project_1/vivado/vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'w:/ECE532/New1/project_1_1/project_1/ip_repo/comm_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'w:/ECE532/New1/project_1_1/project_1/vga_ip/vga_ip.srcs/sources_1/imports/ECE532'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'w:/ECE532/New1/project_1_1/project_1/video_in/video_in.srcs/sources_1/new'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'w:/ECE532/New1/project_1_1/project_1/ipu/ipu.srcs/sources_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1002.746 ; gain = 334.629
+update_compile_order -fileset sources_1
+open_bd_design {W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_0
+Adding cell -- xilinx.com:ip:microblaze:9.6 - microblaze_0
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_50M
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_1
+Adding cell -- utoronto.ca:user:comm:1.0 - comm_0
+Adding cell -- utoronto.ca:user:vga_ip:1.0 - vga_ip_0
+Adding cell -- utoronto.ca:user:video_in:1.0 - video_in_0
+Adding cell -- xilinx.com:user:IPU_wrapper:1.0 - IPU_wrapper_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram
+Successfully read diagram <design_1> from BD file <W:/ECE532/New1/project_1_1/project_1/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd>
